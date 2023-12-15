@@ -161,31 +161,12 @@ svg.append("g")
 }
 
 
-// Define an asynchronous function to load and process data
-async function loadDataAndProcess() {
-    // Load each dataset using d3.csv. Await pauses execution until the dataset is fully loaded.
-    const driverStandings = await d3.csv("driver_standings.csv");
-    const drivers = await d3.csv("drivers.csv");
-    const results = await d3.csv("results.csv");
-    const qualifying = await d3.csv("qualifying.csv");
-    const pitStops = await d3.csv("pit_stops.csv");
-    const lapTimes = await d3.csv("lap_times.csv");
-    const races = await d3.csv("races.csv");
-    const sprintResults = await d3.csv("sprint_results.csv");
-    const seasons = await d3.csv("seasons.csv");
-    const status = await d3.csv("status.csv");
-    const constructors = await d3.csv("constructors.csv");
-    const constructorResults = await d3.csv("constructor_results.csv");
-    const constructorStandings = await d3.csv("constructor_standings.csv");
-
-    // Process the loaded data using a custom processData function
-    // This function should handle the logic for joining and aggregating data from the loaded datasets
-    const processedData = processData(driverStandings, drivers, results, qualifying, pitStops, lapTimes, races, sprintResults, seasons, status, constructors, constructorResults, constructorStandings);
-    
-    // Create a bar chart visualization using the processed data
-    createBarChart(processedData);
-}
-
-// Call the loadDataAndProcess function to execute the data loading and processing
-loadDataAndProcess();
-
+// Load data using d3.csv and process it
+d3.csv("driver_standings.csv").then(driverStandings => {
+    d3.csv("drivers.csv").then(drivers => {
+        d3.csv("results.csv").then(results => {
+            const processedData = processData(driverStandings, drivers, results);
+            createBarChart(processedData);
+        });
+    });
+});

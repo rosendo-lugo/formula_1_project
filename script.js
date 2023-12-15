@@ -98,3 +98,8 @@ d3.csv("driver_standings.csv").then(driverStandings => {
         });
     });
 });
+
+
+
+
+

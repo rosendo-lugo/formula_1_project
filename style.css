@@ -68,13 +68,17 @@ body
     text-decoration: none;
     color: var(--white);
 }
+.navigation ul li:hover a
+{
+    color: var(--blue);
+}
 .navigation ul li a .icon
 {
     position: relative;
     display: block;
     min-width: 60px;
     height: 60px;
-    line-height: 60px;
+    line-height: 70px;
     text-align: center;
 }
 .navigation ul li a .icon ion-icon

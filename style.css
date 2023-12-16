@@ -67,7 +67,7 @@ body
 /* Hover effect for list items */
 .navigation ul li:hover 
 {
-    background: var(--black1);
+    background: var(--white);
 }
 
 /* Specific styling for the first list item */
@@ -85,7 +85,7 @@ body
     width: 100%;
     display: flex;
     text-decoration: none;
-    color: var(--red);
+    color: var(--white);
 }
 
 /* Hover effect for links */

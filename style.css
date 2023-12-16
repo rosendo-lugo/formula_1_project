@@ -47,12 +47,14 @@ body
     position: relative;
     width: 200%;
     list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 .navigation ul li:hover
 {
     background: var(--white);
 }
-.navigation ul li:nth-child()
+.navigation ul li:nth-child(1)
 {
     margin-bottom: 40px;
     pointer-events: none;
@@ -73,4 +75,29 @@ body
     min-width: 60px;
     height: 60px;
     line-height: 60px;
+    text-align: center;
+}
+.navigation ul li a .icon ion-icon
+{
+    font-size: 1.75cm;
+}
+.navigation ul li a .title
+{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+/* curve outside */
+.navigation ul li:hover a::before
+{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: #f00;
 }

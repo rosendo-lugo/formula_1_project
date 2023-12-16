@@ -1,4 +1,102 @@
-#chart {
-    width: 600px;
-    height: 400px;
-}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Admin Dashboard | Redesign</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="car-sport-outline"></ion-icon></span>
+                        <span class="title">Drivers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">Driver Standings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">Results</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">Podium</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">Qualifying</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">Sprint Results</span>
+                    </a>
+                </li>                
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">Pit Stops</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">Lap Summary</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">Constructor</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">Constructor Results</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">Constructor Standings</span>
+                    </a>
+                </li>                
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">Races</span>
+                    </a>
+                </li>                
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">Seasons</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">Circuits</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

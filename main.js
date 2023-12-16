@@ -1,9 +1,6 @@
-
 // main.js
 const { processData } = require('./acquireData');
 const { cleanData } = require('./dataPrep');
-
-
 
 
 // Pseudocode for creating a bar chart
@@ -59,4 +56,35 @@ svg.append("g")
 }
 
 
+function countDriversByNationality(data) {
+  return data.reduce((acc, { nationality }) => {
+      acc[nationality] = (acc[nationality] || 0) + 1;
+      return acc;
+  }, {});
+}
 
+function createNationalityChart(data) {
+  const counts = countDriversByNationality(data);
+  const sortedNationalities = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 10);
+  const labels = sortedNationalities.map(item => item[0]);
+  const values = sortedNationalities.map(item => item[1]);
+
+  //
+  const trace = {
+      type: 'pie',
+      labels: labels,
+      values: values,
+      textfont: { size: 20 },
+      marker: { line: { color: '#000000', width: 2 } }
+  };
+
+  const layout = {
+      title: "Top 10 Nationalities Since 1950",
+      height: 400,
+      width: 500
+  };
+
+  Plotly.newPlot('myDiv', [trace], layout);
+}
+
+createNationalityChart(driversData);

@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>D3 Visualization</title>
+    <title>Formula 1 Dashboard</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://d3js.org/d3.v6.min.js"></script>
 </head>
 <body>
+    <div id="controls">
+        <select id="data-selection">
+            <option value="driverStandings">Driver Standings</option>
+            <option value="raceResults">Race Results</option>
+            <!-- Add other options here -->
+        </select>
+        <button onclick="updateVisualization()">Update Visualization</button>
+    </div>
     <div id="chart"></div>
+
     <script src="script.js"></script>
 </body>
 </html>

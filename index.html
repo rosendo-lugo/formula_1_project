@@ -1,34 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formula 1 Dashboard</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://d3js.org/d3.v6.min.js"></script>
 </head>
 <body>
-    <div id="controls">
-        <select id="data-selection">
-            <option value="driverStandings">Driver Standings</option>
-            <option value="results">Race Results</option>
-            <option value="qualifying">Qualifying Results</option>
-            <option value="pitStops">Pit Stops</option>
-            <option value="lapTimes">Lap Times</option>
-            <option value="sprintResults">Sprint Results</option>
-            <option value="drivers">Drivers</option>
-            <option value="seasons">Seasons</option>
-            <option value="status">Status</option>
-            <option value="races">Status</option>
-            <option value="circuits">Circuits</option>
-            <option value="constructors">Constructors</option>
-            <option value="constructorStandings">Constructor Standings</option>
-            <option value="constructorResults">Constructor Results</option>
-            
-
-        </select>
-        <button onclick="updateVisualization()">Update Visualization</button>
+    <div class="container">
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="drivers.html">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="title">Drivers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="driver-standings.html">
+                        <span class="icon"><ion-icon name="podium-outline"></ion-icon></span>
+                        <span class="title">Driver Standings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="results.html">
+                        <span class="icon"><ion-icon name="trophy-outline"></ion-icon></span>
+                        <span class="title">Results</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="podium.html">
+                        <span class="icon"><ion-icon name="golf-outline"></ion-icon></span>
+                        <span class="title">Podium</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="qualifying.html">
+                        <span class="icon"><ion-icon name="checkmark-outline"></ion-icon></span>
+                        <span class="title">Qualifying</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="sprint-results.html">
+                        <span class="icon"><ion-icon name="cog-outline"></ion-icon></span>
+                        <span class="title">Sprint Results</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pit-stops.html">
+                        <span class="icon"><ion-icon name="car-sport-outline"></ion-icon></span>
+                        <span class="title">Pit Stops</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="lap-summary.html">
+                        <span class="icon"><ion-icon name="infinite-outline"></ion-icon></span>
+                        <span class="title">Lap Summary</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="constructor.html">
+                        <span class="icon"><ion-icon name="disc-outline"></ion-icon></span>
+                        <span class="title">Constructor</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="constructor-results.html">
+                        <span class="icon"><ion-icon name="extension-puzzle-outline"></ion-icon></span>
+                        <span class="title">Constructor Results</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="constructor-standings.html">
+                        <span class="icon"><ion-icon name="expand-outline"></ion-icon></span>
+                        <span class="title">Constructor Standings</span>
+                    </a>
+                </li>                
+                <li>
+                    <a href="races.html">
+                        <span class="icon"><ion-icon name="analytics-outline"></ion-icon></span>
+                        <span class="title">Races</span>
+                    </a>
+                </li>                
+                <li>
+                    <a href="seasons.html">
+                        <span class="icon"><ion-icon name="aperture-outline"></ion-icon></span>
+                        <span class="title">Seasons</span>
+                    </a>
+                </li>
+                <li>
+                <a href="circuits.html">
+                    <span class="icon"><ion-icon name="game-controller-outline"></ion-icon></span>
+                    <span class="title">Circuits</span>
+                </a>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <div id="chart"></div>
-
-    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

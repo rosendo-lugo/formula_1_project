@@ -1,100 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Admin Dashboard | Redesign</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard | Redesign</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="navigation">
+        <nav class="navigation">
             <ul>
                 <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="car-sport-outline"></ion-icon></span>
+                    <a href="drivers.html">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
                         <span class="title">Drivers</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <span class="icon"></span>
+                    <a href="driver-standings.html">
+                        <span class="icon"><ion-icon name="podium-outline"></ion-icon></span>
                         <span class="title">Driver Standings</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <span class="icon"></span>
+                    <a href="results.html">
+                        <span class="icon"><ion-icon name="trophy-outline"></ion-icon></span>
                         <span class="title">Results</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <span class="icon"></span>
+                    <a href="podium.html">
+                        <span class="icon"><ion-icon name="golf-outline"></ion-icon></span>
                         <span class="title">Podium</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <span class="icon"></span>
+                    <a href="qualifying.html">
+                        <span class="icon"><ion-icon name="checkmark-outline"></ion-icon></span>
                         <span class="title">Qualifying</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <span class="icon"></span>
+                    <a href="sprint-results.html">
+                        <span class="icon"><ion-icon name="cog-outline"></ion-icon></span>
                         <span class="title">Sprint Results</span>
                     </a>
-                </li>                
+                </li>
                 <li>
-                    <a href="#">
-                        <span class="icon"></span>
+                    <a href="pit-stops.html">
+                        <span class="icon"><ion-icon name="car-sport-outline"></ion-icon></span>
                         <span class="title">Pit Stops</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <span class="icon"></span>
+                    <a href="lap-summary.html">
+                        <span class="icon"><ion-icon name="infinite-outline"></ion-icon></span>
                         <span class="title">Lap Summary</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <span class="icon"></span>
+                    <a href="constructor.html">
+                        <span class="icon"><ion-icon name="disc-outline"></ion-icon></span>
                         <span class="title">Constructor</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <span class="icon"></span>
+                    <a href="constructor-results.html">
+                        <span class="icon"><ion-icon name="extension-puzzle-outline"></ion-icon></span>
                         <span class="title">Constructor Results</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <span class="icon"></span>
+                    <a href="constructor-standings.html">
+                        <span class="icon"><ion-icon name="expand-outline"></ion-icon></span>
                         <span class="title">Constructor Standings</span>
                     </a>
                 </li>                
                 <li>
-                    <a href="#">
-                        <span class="icon"></span>
+                    <a href="races.html">
+                        <span class="icon"><ion-icon name="analytics-outline"></ion-icon></span>
                         <span class="title">Races</span>
                     </a>
                 </li>                
                 <li>
-                    <a href="#">
-                        <span class="icon"></span>
+                    <a href="seasons.html">
+                        <span class="icon"><ion-icon name="aperture-outline"></ion-icon></span>
                         <span class="title">Seasons</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <span class="icon"></span>
-                        <span class="title">Circuits</span>
-                    </a>
+                <a href="circuits.html">
+                    <span class="icon"><ion-icon name="game-controller-outline"></ion-icon></span>
+                    <span class="title">Circuits</span>
+                </a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

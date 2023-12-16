@@ -1,66 +1,76 @@
+/* Importing Ubuntu font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-*
-{
+
+/* Universal base styles */
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
-
+    box-sizing: border-box; /* Makes sure padding and border are included in element's total width and height */
+    font-family: 'Ubuntu', sans-serif; /* Setting default font */
 }
-:root
-{
+
+/* Root custom properties (CSS variables) for easy theme management */
+:root {
     --blue: #287bff;
     --white: #fff;
     --gray: #f5f5f5;
     --black1: #222;
     --black2: #9999;
 }
-body
-{
-    min-height: 100vh;
-    overflow-x: hidden;
+
+/* Body styling */
+body {
+    min-height: 100vh; /* Minimum height to cover the full viewport height */
+    overflow-x: hidden; /* Hides horizontal scrollbar */
 }
-.container
-{
+
+/* Container styling */
+.container {
     position: relative;
     width: 100%;
 }
-.navigation
-{
+
+/* Navigation menu styling */
+.navigation {
     position: fixed;
     width: 300px;
     height: 100%;
     background: var(--blue);
     border-left: 10px solid var(--blue);
-    transition: 0.5s;
-    overflow: hidden;
+    transition: 0.5s; /* Smooth transition for any changes */
+    overflow: hidden; /* Hides any overflow content */
 }
-.navigation ul
-{
+
+/* Navigation list styling */
+.navigation ul {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
-.navigation ul li
-{
+
+/* Navigation list item styling */
+.navigation ul li {
     position: relative;
     width: 200%;
     list-style: none;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
-.navigation ul li:hover
-{
+
+/* Hover effect for list items */
+.navigation ul li:hover {
     background: var(--white);
 }
-.navigation ul li:nth-child(1)
-{
+
+/* Specific styling for the first list item */
+.navigation ul li:nth-child(1) {
     margin-bottom: 40px;
-    pointer-events: none;
+    pointer-events: none; /* Disables pointer events like hover, click */
 }
-.navigation ul li a
-{
+
+/* Link styling within list items */
+.navigation ul li a {
     position: relative;
     display: block;
     width: 100%;
@@ -68,12 +78,14 @@ body
     text-decoration: none;
     color: var(--blue);
 }
-.navigation ul li:hover a
-{
+
+/* Hover effect for links */
+.navigation ul li:hover a {
     color: var(--blue);
 }
-.navigation ul li a .icon
-{
+
+/* Icon styling within links */
+.navigation ul li a .icon {
     position: relative;
     display: block;
     min-width: 60px;
@@ -81,27 +93,29 @@ body
     line-height: 60px;
     text-align: center;
 }
-.navigation ul li a .icon ion-icon
-{
-    font-size: 1.75cm;
+
+/* Ion-icon styling */
+.navigation ul li a .icon ion-icon {
+    font-size: 1.75cm; /* Large icon size */
 }
-.navigation ul li a .title
-{
+
+/* Title styling within links */
+.navigation ul li a .title {
     position: relative;
     display: block;
     padding: 0 10px;
     height: 60px;
     line-height: 60px;
     text-align: start;
-    white-space: nowrap;
+    white-space: nowrap; /* Prevents text wrapping */
 }
-/* curve outside */
-.navigation ul li:hover a::before
-{
+
+/* Curve effect outside the navigation on hover */
+.navigation ul li:hover a::before {
     content: '';
     position: absolute;
     right: 0;
     width: 50px;
     height: 50px;
-    background: #f00;
+    background: #f00; /* Red background for the curve effect */
 }

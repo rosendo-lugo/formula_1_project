@@ -85,7 +85,7 @@ body
     width: 100%;
     display: flex;
     text-decoration: none;
-    color: var(--blue);
+    color: var(--white);
 }
 
 /* Hover effect for links */

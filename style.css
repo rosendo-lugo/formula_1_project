@@ -129,7 +129,24 @@ body
     content: '';
     position: absolute;
     right: 0;
+    top: -50px;
     width: 50px;
     height: 50px;
-    background: #f00; /* Red background for the curve effect */
+    background: transparent; /* transparent background for the curve effect */
+    border-radius: 50px;
+    box-shadow: 35px 35px 0 10px var(--white);
+    pointer-events: none;
+}
+.navigation ul li:hover a::after 
+{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent; /* transparent background for the curve effect */
+    border-radius: 50px;
+    box-shadow: 35px -35px 0 10px var(--white);
+    pointer-events: none;
 }

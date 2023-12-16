@@ -1,102 +1,76 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Admin Dashboard | Redesign</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <nav class="navigation">
-            <ul>
-                <li>
-                    <a href="drivers.html">
-                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
-                        <span class="title">Drivers</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="driver-standings.html">
-                        <span class="icon"><ion-icon name="podium-outline"></ion-icon></span>
-                        <span class="title">Driver Standings</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="results.html">
-                        <span class="icon"><ion-icon name="trophy-outline"></ion-icon></span>
-                        <span class="title">Results</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="podium.html">
-                        <span class="icon"><ion-icon name="golf-outline"></ion-icon></span>
-                        <span class="title">Podium</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="qualifying.html">
-                        <span class="icon"><ion-icon name="checkmark-outline"></ion-icon></span>
-                        <span class="title">Qualifying</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="sprint-results.html">
-                        <span class="icon"><ion-icon name="cog-outline"></ion-icon></span>
-                        <span class="title">Sprint Results</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="pit-stops.html">
-                        <span class="icon"><ion-icon name="car-sport-outline"></ion-icon></span>
-                        <span class="title">Pit Stops</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="lap-summary.html">
-                        <span class="icon"><ion-icon name="infinite-outline"></ion-icon></span>
-                        <span class="title">Lap Summary</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="constructor.html">
-                        <span class="icon"><ion-icon name="disc-outline"></ion-icon></span>
-                        <span class="title">Constructor</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="constructor-results.html">
-                        <span class="icon"><ion-icon name="extension-puzzle-outline"></ion-icon></span>
-                        <span class="title">Constructor Results</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="constructor-standings.html">
-                        <span class="icon"><ion-icon name="expand-outline"></ion-icon></span>
-                        <span class="title">Constructor Standings</span>
-                    </a>
-                </li>                
-                <li>
-                    <a href="races.html">
-                        <span class="icon"><ion-icon name="analytics-outline"></ion-icon></span>
-                        <span class="title">Races</span>
-                    </a>
-                </li>                
-                <li>
-                    <a href="seasons.html">
-                        <span class="icon"><ion-icon name="aperture-outline"></ion-icon></span>
-                        <span class="title">Seasons</span>
-                    </a>
-                </li>
-                <li>
-                <a href="circuits.html">
-                    <span class="icon"><ion-icon name="game-controller-outline"></ion-icon></span>
-                    <span class="title">Circuits</span>
-                </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
-</html>
+#import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+:root
+{
+    --blue: #287bff;
+    --white: #fff;
+    --gray: #f5f5f5;
+    --black1: #222;
+    --black2: #9999;
+}
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+}
+.navigation
+{
+    position:fixed;
+    width: 300px;
+    height: 100%;
+    background: var(--blue);
+    border-left: 10px solid var(--blue);
+    transition: 0.5s;
+    overflow: hidden;
+}
+.navigation ul
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.navigation ul li
+{
+    position: relative;
+    width: 200%;
+    list-style: none;
+}
+.navigation ul li:hover
+{
+    background: var(--white);
+}
+.navigation ul li:nth-child()
+{
+    margin-bottom: 40px;
+    pointer-events: none;
+}
+.navigation ul li a
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+}
+.navigation ul li a .icon
+{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+}

@@ -59,12 +59,4 @@ svg.append("g")
 }
 
 
-// Load data using d3.csv and process it
-d3.csv("driver_standings.csv").then(driverStandings => {
-    d3.csv("drivers.csv").then(drivers => {
-        d3.csv("results.csv").then(results => {
-            const processedData = processData(driverStandings, drivers, results);
-            createBarChart(processedData);
-        });
-    });
-});
+

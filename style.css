@@ -384,7 +384,6 @@ body
 {
     text-align: center;
 }
-/* table
 .status .delivered 
 {
     padding: 2px 4px;
@@ -394,8 +393,6 @@ body
     font-size: 14px;
     font-weight: 500;
 }
-*/
-
 .status.pending
 {
     padding: 2px 4px;

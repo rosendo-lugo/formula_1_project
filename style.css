@@ -522,7 +522,7 @@ body
     {
         overflow-x: auto;
     }
-    .status .inprogress
+    .status.inprogress
     {
         white-space: nowrap;
     }

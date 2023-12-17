@@ -401,7 +401,7 @@ body
     font-size: 14px;
     font-weight: 500;
 }
-.recentCustomers
+.recentDrivers
 {
     position: relative;
     display: grid;
@@ -411,7 +411,7 @@ body
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
     border-radius: 20px;
 }
-.recentCustomers .imgBx
+.recentDrivers .imgBx
 {
     position: relative;
     width: 40px;
@@ -419,7 +419,7 @@ body
     border-radius: 50%;
     overflow: hidden;
 }
-.recentCustomers .imgBx img
+.recentDrivers .imgBx img
 {
     position: absolute;
     top: 0;
@@ -428,32 +428,32 @@ body
     height: 100px;
     object-fit: cover;
 }
-.recentCustomers table tr:hover
+.recentDrivers table tr:hover
 {
     background: var(--blue);
     color: var(--white);
 }
-.recentCustomers table tr td
+.recentDrivers table tr td
 {
     padding: 12px 10px;
 }
-.recentCustomers table tr td h4
+.recentDrivers table tr td h4
 {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.2cm;
 }
-.recentCustomers table tr td h4 span
+.recentDrivers table tr td h4 span
 {
     font-size: 14px;
     color: var(--black2);
 }
-.recentCustomers table tr:hover
+.recentDrivers table tr:hover
 {
     background: var(--blue);
     color: var(--white);
 }
-.recentCustomers table tr:hover td h4 span
+.recentDrivers table tr:hover td h4 span
 {
     color: var(--white);
 }

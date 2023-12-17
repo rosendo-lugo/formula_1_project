@@ -393,6 +393,7 @@ body
     font-size: 14px;
     font-weight: 500;
 }
+/* table
 .status .pending
 {
     padding: 2px 4px;
@@ -419,7 +420,8 @@ body
     border-radius: 4px;
     font-size: 14px;
     font-weight: 500;
-}
+} 
+*/
 .topDrivers
 {
     position: relative;

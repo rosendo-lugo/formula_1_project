@@ -1,5 +1,5 @@
 const ctx = document.getElementById('myChart').getContext('2d');
-const earning = document.getElementById('earning').getContext('2d');
+const earningCtx = document.getElementById('earning').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'polarArea',
     data: {
@@ -31,7 +31,7 @@ const myChart = new Chart(ctx, {
     }
 });
 
-const myChart = new Chart(earning, {
+const earningChart = new Chart(earningCtx, {
   type: 'bar',
   data: {
       labels: ['Facebook', 'IG', 'Twitter', 'TikTok', 'Snapchat', 'LinkedIn'],

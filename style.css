@@ -417,7 +417,7 @@ body
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    overflow: hidden;
+    object-fit: cover;
 }
 .recentDrivers .imgBx img
 {

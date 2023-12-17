@@ -89,7 +89,8 @@ body
 }
 
 /* Hover effect for links */
-.navigation ul li:hover a 
+.navigation ul li:hover a,
+.navigation ul li:hovered a
 {
     color: var(--blue);
 }
@@ -124,7 +125,8 @@ body
 }
 
 /* Curve effect outside the navigation on hover */
-.navigation ul li:hover a::before 
+.navigation ul li:hover a::before,
+.navigation ul li:hovered a::before
 {
     content: '';
     position: absolute;
@@ -137,7 +139,8 @@ body
     box-shadow: 35px 35px 0 10px var(--white);
     pointer-events: none;
 }
-.navigation ul li:hover a::after 
+.navigation ul li:hover a::after,
+.navigation ul li:hovered a::after 
 {
     content: '';
     position: absolute;

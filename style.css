@@ -165,7 +165,6 @@ body
     background: var(--white);
     transition: 0.5s;
 }
-
 .topbar
 {
     width: 100%;
@@ -215,3 +214,11 @@ body
     left: 10px;
     font-size: 1.2cm;
 }
+.profile-picture img 
+{
+    width: 80px; /* or any other size */
+    height: 80px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+

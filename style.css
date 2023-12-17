@@ -183,7 +183,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.5cm;
+    font-size: 2.1cm;
     cursor: pointer;
 }
 .search
@@ -203,7 +203,7 @@ body
     height: 40px;
     border-radius: 40px;
     padding: 5px 20px;
-    padding-left: 35px;
+    padding-left: 40px;
     outline: none;
     border: 1px solid var(--black2);
 }
@@ -212,7 +212,7 @@ body
     position: absolute;
     top: 0;
     left: 10px;
-    font-size: 1.2cm;
+    font-size: .9cm;
 }
 .profile-picture img 
 {

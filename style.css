@@ -90,7 +90,7 @@ body
 
 /* Hover effect for links */
 .navigation ul li:hover a,
-.navigation ul li:hovered a
+.navigation ul li.hovered a
 {
     color: var(--blue);
 }
@@ -126,7 +126,7 @@ body
 
 /* Curve effect outside the navigation on hover */
 .navigation ul li:hover a::before,
-.navigation ul li:hovered a::before
+.navigation ul li.hovered a::before
 {
     content: '';
     position: absolute;
@@ -140,7 +140,7 @@ body
     pointer-events: none;
 }
 .navigation ul li:hover a::after,
-.navigation ul li:hovered a::after 
+.navigation ul li.hovered a::after 
 {
     content: '';
     position: absolute;

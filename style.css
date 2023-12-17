@@ -298,7 +298,7 @@ body
     min-height: 500px;
     background: var(--white);
     padding: 20px;
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
 }
 .cardHeader
@@ -334,7 +334,7 @@ body
 .details .recentOrders table tr
 {
     color: var(--black1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 .details .recentOrders table tr:last-child
 {
@@ -408,7 +408,7 @@ body
     min-height: 500px;
     padding: 20px;
     background: var(--white);
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
 }
 .recentDrivers .imgBx

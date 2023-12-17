@@ -65,7 +65,7 @@ body
 }
 
 /* Hover effect for list items */
-.navigation ul li:hover ,
+.navigation ul li:hover,
 .navigation ul li.hovered
 {
     background: var(--white);
@@ -90,7 +90,7 @@ body
 }
 
 /* Hover effect for links */
-.navigation ul li:hover a ,
+.navigation ul li:hover a,
 .navigation ul li.hovered a
 {
     color: var(--blue);

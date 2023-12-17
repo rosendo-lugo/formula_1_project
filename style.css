@@ -424,7 +424,7 @@ body
     font-size: 14px;
     font-weight: 500;
 }
-.recentDrivers
+.topDrivers
 {
     position: relative;
     display: grid;
@@ -434,7 +434,7 @@ body
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
 }
-.recentDrivers .imgBx
+.topDrivers .imgBx
 {
     position: relative;
     width: 40px;
@@ -442,7 +442,7 @@ body
     border-radius: 50%;
     object-fit: cover;
 }
-.recentDrivers .imgBx img
+.topDrivers .imgBx img
 {
     position: absolute;
     top: 0;
@@ -451,32 +451,32 @@ body
     height: 40px;
     object-fit: cover;
 }
-.recentDrivers table tr:hover
+.topDrivers table tr:hover
 {
     background: var(--blue);
     color: var(--white);
 }
-.recentDrivers table tr td
+.topDrivers table tr td
 {
     padding: 12px 10px;
 }
-.recentDrivers table tr td h4
+.topDrivers table tr td h4
 {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.2rem;
 }
-.recentDrivers table tr td h4 span
+.topDrivers table tr td h4 span
 {
     font-size: 14px;
     color: var(--black2);
 }
-.recentDrivers table tr:hover
+.topDrivers table tr:hover
 {
     background: var(--blue);
     color: var(--white);
 }
-.recentDrivers table tr:hover td h4 span
+.topDrivers table tr:hover td h4 span
 {
     color: var(--white);
 }

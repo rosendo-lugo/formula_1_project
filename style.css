@@ -401,3 +401,68 @@ body
     font-size: 14px;
     font-weight: 500;
 }
+.recentCustomers
+{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    padding: 20px;
+    background: var(--white);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+.recentCustomers .imgBx
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.recentCustomers .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.recentCustomers table tr:hover
+{
+    background: var(--blue);
+    color: var(--white);
+}
+.recentCustomers table tr td
+{
+    padding: 12px 10px;
+}
+.recentCustomers table tr td h4
+{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2cm;
+}
+.recentCustomers table tr td h4 span
+{
+    font-size: 14px;
+    color: var(--black2);
+}
+.recentCustomers table tr:hover
+{
+    background: var(--blue);
+    color: var(--white);
+}
+.recentCustomers table tr:hover td h4 span
+{
+    color: var(--white);
+}
+
+/*now, make it responsive design */
+@media (max-width: 991px)
+{
+    .navigation
+    {
+        left: -300px;
+    }
+}

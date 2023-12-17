@@ -484,6 +484,11 @@ body
 /*now, make it responsive design */
 @media (max-width: 991px)
 {
+    .graphBox
+    {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
     .navigation
     {
         left: -300px;

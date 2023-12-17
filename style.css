@@ -321,13 +321,13 @@ body
     color: var(--white);
     border-radius: 6px;
 }
-.details .table
+.details table
 {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
 }
-.details .table thead td
+.details table thead td
 {
     font-weight: 600;
 }

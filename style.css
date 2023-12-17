@@ -58,7 +58,7 @@ body
 .navigation ul li 
 {
     position: relative;
-    width: 200%;
+    width: 100%;
     list-style: none;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;

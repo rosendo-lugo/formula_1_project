@@ -130,6 +130,9 @@ body
     text-align: start;
     white-space: nowrap; /* Prevents text wrapping */
 }
+.formula1 {
+    font-size: 1.5rem; /* Adjust the size as needed */
+}
 
 /* Curve effect outside the navigation on hover */
 .navigation ul li:hover a::before,

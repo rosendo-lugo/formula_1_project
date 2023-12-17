@@ -116,7 +116,7 @@ body
 /* Ion-icon styling */
 .navigation ul li a .icon ion-icon 
 {
-    font-size: 1.35rem; /* Large icon size */
+    font-size: 1.45rem; /* Large icon size */
 }
 
 /* Title styling within links */
@@ -195,7 +195,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.1rem;
+    font-size: 2.3rem;
     cursor: pointer;
 }
 .search

@@ -178,6 +178,7 @@ body
 .toggle
 {
     position: relative;
+    top: 0;
     width: 60px;
     height: 60px;
     display: flex;
@@ -212,7 +213,7 @@ body
     position: absolute;
     top: 0;
     left: 10px;
-    font-size: .9cm;
+    font-size: .7cm;
 }
 .profile-picture img 
 {

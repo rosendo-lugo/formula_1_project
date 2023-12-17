@@ -357,11 +357,11 @@ body
 {
     text-align: end;
 }
-.details .recentOrders table tr td:last-child(2)
+.details .recentOrders table tr td:nth-child(2)
 {
     text-align: end;
 }
-.details .recentOrders table tr td:last-child(3)
+.details .recentOrders table tr td:nth-child(3)
 {
     text-align: center;
 }

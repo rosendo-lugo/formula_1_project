@@ -104,3 +104,51 @@ function processData(driverStandings, drivers, results, qualifying, pitStops, la
         // return { aggregatedData, winsByDriver };
         return aggregatedData; // or return winsByDriver; based on your requirement
     }
+
+    function getData(dataSet) {
+        let processedData;
+    
+        switch (dataSet) {
+            case 'races':
+                processedData = processDataRaces(); // Assuming processDataRaces() is a function that processes races data
+                break;
+            case 'circuits':
+                processedData = processDataCircuits(); // Similar function for circuits
+                break;
+            case 'lapTimes':
+                processedData = processDataLapTimes(); // Function for lap times
+                break;
+            case 'qualifying':
+                processedData = processDataQualifying(); // Function for qualifying
+                break;
+            // Add more cases as needed
+        }
+    
+        return formatDataForChart(processedData);
+    }
+    
+    function formatDataForChart(rawData) {
+        // Format the raw data into a structure that Chart.js can use
+        // Example:
+        return {
+            labels: rawData.map(item => item.label),
+            datasets: [{
+                label: rawData.label,
+                data: rawData.map(item => item.value),
+                backgroundColor: generateColors(rawData.length),
+                borderColor: generateBorderColors(rawData.length),
+                borderWidth: 1
+            }]
+        };
+    }
+    
+    // Add functions to generate colors and border colors for the chart
+    function generateColors(length) {
+        // Generate an array of colors
+    }
+    
+    function generateBorderColors(length) {
+        // Generate an array of border colors
+    }
+    // Export the necessary functions if using modules
+export { getData, processData, formatDataForChart };

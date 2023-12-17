@@ -169,44 +169,8 @@
 
             <!-- Add Charts -->
             <div class="graphBox">
-                <div class="box">
-                    <select class="chartTypeSelector">
-                        <option value="polarArea">Polar Area</option>
-                        <option value="bar">Bar</option>
-                        <option value="bubble">Bubble</option>
-                        <option value="doughnut">Doughnut</option>
-                        <option value="line">Line</option>
-                        <option value="radar">Radar</option>
-                        <option value="scatter">Scatter</option>
-                    </select>
-                    <select class="dataSetSelector">
-                        <option value="races">Races</option>
-                        <option value="circuits">Circuits</option>
-                        <option value="lapTimes">Lap Times</option>
-                        <option value="qualifying">Qualifying</option>
-                        <!-- Add other data sets as options -->
-                    </select>
-                    <canvas id="myChart"></canvas>
-                </div>
-                <div class="box">
-                    <select class="chartTypeSelector">
-                        <option value="polarArea">Polar Area</option>
-                        <option value="bar">Bar</option>
-                        <option value="bubble">Bubble</option>
-                        <option value="doughnut">Doughnut</option>
-                        <option value="line">Line</option>
-                        <option value="radar">Radar</option>
-                        <option value="scatter">Scatter</option>
-                    </select>
-                    <select class="dataSetSelector">
-                        <option value="races">Races</option>
-                        <option value="circuits">Circuits</option>
-                        <option value="lapTimes">Lap Times</option>
-                        <option value="qualifying">Qualifying</option>
-                        <!-- Add other data sets as options -->
-                    </select>
-                    <canvas id="earning"></canvas>
-                </div>
+                <div class="box"><canvas id="myChart"></canvas></div>
+                <div class="box"><canvas id="earning"></canvas></div>
             </div>
 
             <!-- order details list -->
@@ -314,7 +278,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-    <script src="my_chart_extra.js"></script>
+    <script src="my_chart.js"></script>
     <script>
         //MenuToggle
         let toggle = document.querySelector('.toggle');

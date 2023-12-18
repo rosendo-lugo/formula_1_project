@@ -304,18 +304,18 @@ body
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
 }
-.details
-{
+/* Styling for the details section with a grid layout */
+.details {
     position: relative;
     width: 100%;
     padding: 20px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
-    /* margin-top: 10px; */
 }
-.details .formulaOne
-{
+
+/* Styling for the formulaOne container */
+.details .formulaOne {
     position: relative;
     display: grid;
     min-height: 500px;
@@ -324,13 +324,16 @@ body
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
 }
+
+/* Styling for the card header with a flex layout */
 .cardHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px; /* Added for spacing between header and table */
+    margin-bottom: 20px; /* Spacing between header and table */
 }
 
+/* Styling for the dropdown select in the card header */
 .cardHeader select {
     padding: 5px 10px;
     border: 1px solid var(--blue);
@@ -341,27 +344,37 @@ body
     cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
-/* Add custom styles for the table as required */
-
+/* Styling for the table in the formulaOne container */
 .formulaOne table {
-    /* Your existing table styles */
+    width: 100%;
+    border-collapse: collapse;
 }
 
-/* Additional styling for table headers and rows */
-.details table thead th {
-    font-weight: 600;
-}
-
-.details .formulaOne table tr td {
-    padding: 10px;
-    text-align: left; /* Adjust text alignment as needed */
-}
-
-/* Hover effect for rows */
-.details .formulaOne table tbody tr:hover {
+/* Styling for the table header row */
+.formulaOne table thead tr {
     background: var(--blue);
     color: var(--white);
 }
+
+/* Styling for the table headers (th elements) */
+.formulaOne table thead th {
+    font-weight: 600;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Styling for the table data cells (td elements) */
+.formulaOne table tbody td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Hover effect for table rows */
+.formulaOne table tbody tr:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
 
 .topDrivers
 {

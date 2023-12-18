@@ -324,66 +324,45 @@ body
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
 }
-.cardHeader
-{
+.cardHeader {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    margin-bottom: 20px; /* Added for spacing between header and table */
 }
-.cardHeader h2
-{
-    font-weight: 600;
-    color: var(--blue);
-}
-.btn
-{
-    position: relative;
+
+.cardHeader select {
     padding: 5px 10px;
-    background: var(--blue);
-    text-decoration: none;
-    color: var(--white);
+    border: 1px solid var(--blue);
+    background-color: var(--white);
+    color: var(--blue);
     border-radius: 6px;
+    outline: none; /* Removes the default focus outline */
+    cursor: pointer; /* Changes cursor to pointer on hover */
 }
-.details table
-{
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+
+/* Add custom styles for the table as required */
+
+.formulaOne table {
+    /* Your existing table styles */
 }
-.details table thead td
-{
+
+/* Additional styling for table headers and rows */
+.details table thead th {
     font-weight: 600;
 }
-.details .formulaOne table tr
-{
-    color: var(--black1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+.details .formulaOne table tr td {
+    padding: 10px;
+    text-align: left; /* Adjust text alignment as needed */
 }
-.details .formulaOne table tr:last-child
-{
-    border-bottom: none;
-}
-.details .formulaOne table tbody tr:hover
-{
+
+/* Hover effect for rows */
+.details .formulaOne table tbody tr:hover {
     background: var(--blue);
     color: var(--white);
 }
-.details .formulaOne table tr td
-{
-    padding: 10px;
-}
-.details .formulaOne table tr td:last-child
-{
-    text-align: end;
-}
-.details .formulaOne table tr td:nth-child(2)
-{
-    text-align: end;
-}
-.details .formulaOne table tr td:nth-child(3)
-{
-    text-align: center;
-}
+
 .topDrivers
 {
     position: relative;

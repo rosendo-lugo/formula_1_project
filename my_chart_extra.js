@@ -1,4 +1,5 @@
-import { getData } from './my_chart_extra.js';
+import { getData } from './acquireData.js'; // Adjust the path if necessary
+
 
 // Initialize the chart for a specific canvas and its associated selectors
 function initializeChart(canvasId, dataSetSelectorClass) {
@@ -50,7 +51,25 @@ function updateChart(chart, type, dataSet, canvas) {
 initializeChart('myChart', '.dataSetSelector1');
 initializeChart('earning', '.dataSetSelector2');
 
+document.querySelector('.dataSetSelector3').addEventListener('change', function() {
+    const selectedFile = this.value;
+    fetchCSVAndUpdateTable(selectedFile);
+});
 
+function fetchCSVAndUpdateTable(fileName) {
+    // Determine the path of the CSV file based on the selected option
+    const filePath = `path/to/${fileName}.csv`;
+
+    // Fetch and process the CSV file
+    fetch(filePath)
+        .then(response => response.text())
+        .then(csvText => {
+            const [headers, ...rows] = parseCSV(csvText);
+            updateTableHeaders(headers);
+            updateTableRows(rows);
+        })
+        .catch(error => console.error('Error fetching CSV:', error));
+}
 function parseCSV(csvData) {
     const lines = csvData.split('\n');
     return lines.map(line => line.split(','));

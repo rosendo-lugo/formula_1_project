@@ -314,27 +314,33 @@ body
 }
 
 /* Styling for the formulaOne container */
-.details .formulaOne {
-    background: var(--light-gray);
+.details .formulaOne 
+{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    background: var(--white);
     padding: 20px;
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
 }
 
 /* Styling for the card header with a flex layout */
-.cardHeader {
+.cardHeader 
+{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 20px; /* Spacing between header and table */
 }
-
-.cardHeader h2 {
-    color: var(--white); /* Dark gray color for the header text */
+.cardHeader h2 
+{
+    font-weight: 600;
+    color: var(--blue); /* Dark gray color for the header text */
 }
-
 /* Styling for the dropdown select in the card header */
-.cardHeader select {
+.cardHeader select 
+{
     padding: 5px 10px;
     border: 1px solid var(--blue);
     background-color: var(--white);
@@ -345,34 +351,35 @@ body
 }
 
 /* Styling for the table in the formulaOne container */
-.formulaOne table {
+.details table 
+{
     width: 100%;
     border-collapse: collapse;
-    background: var(--white);
+    margin-top: 10px;
 }
-
 /* Styling for the table header row */
-.formulaOne table thead tr {
-    background: var(--blue);
-    color: var(--white);
+.details table thead td
+{
+    font-weight: 600;
 }
 
 /* Styling for the table headers (th elements) */
-.formulaOne table thead th {
+.details .formulaOne thead th 
+{
     font-weight: 600;
     padding: 10px;
     text-align: left;
 }
-
 /* Styling for the table data cells (td elements) */
-.formulaOne table tbody td {
+.details .formulaOne tbody td 
+{
     padding: 10px;
     text-align: left;
     color: var(--blue); /* Dark gray color for table data */
 }
-
 /* Hover effect for table rows */
-.formulaOne table tbody tr:hover {
+.details .formulaOne table tbody tr:hover 
+{
     background: var(--blue);
     color: var(--white);
 }

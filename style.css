@@ -314,7 +314,7 @@ body
     grid-gap: 30px;
     /* margin-top: 10px; */
 }
-.details .recentOrders
+.details .formulaOne
 {
     position: relative;
     display: grid;
@@ -354,33 +354,33 @@ body
 {
     font-weight: 600;
 }
-.details .recentOrders table tr
+.details .formulaOne table tr
 {
     color: var(--black1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.details .recentOrders table tr:last-child
+.details .formulaOne table tr:last-child
 {
     border-bottom: none;
 }
-.details .recentOrders table tbody tr:hover
+.details .formulaOne table tbody tr:hover
 {
     background: var(--blue);
     color: var(--white);
 }
-.details .recentOrders table tr td
+.details .formulaOne table tr td
 {
     padding: 10px;
 }
-.details .recentOrders table tr td:last-child
+.details .formulaOne table tr td:last-child
 {
     text-align: end;
 }
-.details .recentOrders table tr td:nth-child(2)
+.details .formulaOne table tr td:nth-child(2)
 {
     text-align: end;
 }
-.details .recentOrders table tr td:nth-child(3)
+.details .formulaOne table tr td:nth-child(3)
 {
     text-align: center;
 }
@@ -514,7 +514,7 @@ body
     {
         grid-template-columns: repeat(1,1fr);
     }
-    .recentOrders
+    .formulaOne
     {
         overflow-x: auto;
     }

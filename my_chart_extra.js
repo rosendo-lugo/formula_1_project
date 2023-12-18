@@ -101,6 +101,17 @@ function updateTableHeaders(headers) {
 }
 
 function updateTableRows(rows) {
-    // Similar to previous examples, create and append rows to tbody
-    // ...
+    const tbody = document.querySelector('#ordersTable tbody');
+    tbody.innerHTML = ''; // Clear existing rows
+
+    rows.forEach(row => {
+        const tr = document.createElement('tr');
+        row.forEach(cell => {
+            const td = document.createElement('td');
+            td.textContent = cell.trim(); // Add the cell data to the table cell
+            tr.appendChild(td); // Append the table cell to the row
+        });
+        tbody.appendChild(tr); // Append the row to the tbody
+    });
 }
+

@@ -304,7 +304,6 @@ body
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
 }
-/* Styling for the details section with a grid layout */
 .details {
     position: relative;
     width: 100%;
@@ -316,10 +315,7 @@ body
 
 /* Styling for the formulaOne container */
 .details .formulaOne {
-    position: relative;
-    display: grid;
-    min-height: 500px;
-    background: var(--white);
+    background: var(--light-gray);
     padding: 20px;
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
@@ -331,6 +327,10 @@ body
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px; /* Spacing between header and table */
+}
+
+.cardHeader h2 {
+    color: var(--white); /* Dark gray color for the header text */
 }
 
 /* Styling for the dropdown select in the card header */
@@ -348,6 +348,7 @@ body
 .formulaOne table {
     width: 100%;
     border-collapse: collapse;
+    background: var(--white);
 }
 
 /* Styling for the table header row */
@@ -367,6 +368,7 @@ body
 .formulaOne table tbody td {
     padding: 10px;
     text-align: left;
+    color: var(--blue); /* Dark gray color for table data */
 }
 
 /* Hover effect for table rows */
@@ -374,8 +376,6 @@ body
     background: var(--blue);
     color: var(--white);
 }
-
-
 .topDrivers
 {
     position: relative;

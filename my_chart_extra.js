@@ -118,6 +118,17 @@ function updateTableHeaders(headers) {
 
     thead.appendChild(tr);
 }
+function populateTable(data) {
+    const tbody = document.getElementById('fullDataTable').querySelector('tbody');
+    data.forEach(item => {
+        const row = document.createElement('tr');
+        // Create and append table cells (td) to the row based on item properties
+        tbody.appendChild(row);
+    });
+}
+
+// Call populateTable with your data
+populateTable(yourDataArray);
 
 function updateTableRows(rows) {
     const tbody = document.querySelector('#ordersTable tbody');

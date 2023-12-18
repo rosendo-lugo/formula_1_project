@@ -144,4 +144,23 @@ function updateTableRows(rows) {
         tbody.appendChild(tr); // Append the row to the tbody
     });
 }
+function updateSummary(data) {
+    document.getElementById('totalRaces').textContent = calculateTotalRaces(data);
+    document.getElementById('avgLapTime').textContent = calculateAverageLapTime(data);
+    // More calculations and updates
+}
 
+// Call updateSummary with the relevant data
+updateSummary(yourDataObject);
+
+function populateTable(data) {
+    const tbody = document.getElementById('fullDataTable').querySelector('tbody');
+    data.forEach(item => {
+        const row = document.createElement('tr');
+        // Create and append table cells (td) to the row based on item properties
+        tbody.appendChild(row);
+    });
+}
+
+// Call populateTable with your data
+populateTable(yourDataArray);

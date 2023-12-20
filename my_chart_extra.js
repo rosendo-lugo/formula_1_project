@@ -1,7 +1,7 @@
 /*
 import { getData } from './acquireData.js'; // Ensure the path is correct*/
 
-/* 
+
 
 const ctx3 = document.getElementById('chart3').getContext('2d');
 const ctx4 = document.getElementById('chart4').getContext('2d');
@@ -66,7 +66,7 @@ const newChart4 = new Chart(ctx4, {
       responsive: true,
   }
 });
- */
+ /* 
 const ctx = document.getElementById('myChart').getContext('2d');
 const earningCtx = document.getElementById('earning').getContext('2d');
 const myChart = new Chart(ctx, {
@@ -130,7 +130,7 @@ const earningChart = new Chart(earningCtx, {
       responsive: true,
   }
 });
-
+  */
 /*
 function initializeChart(canvasId, dataSetSelectorClass) {
     const canvas = document.getElementById(canvasId);

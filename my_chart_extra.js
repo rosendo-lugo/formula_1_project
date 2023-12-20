@@ -132,8 +132,9 @@ function getChartConfig(chartType) {
             };
         case 'line':
             return {
+                labels = Utils.months({count: 7});
                 data: {
-                    labels: Utils.months({ count: 7 }), // Make sure Utils.months is defined
+                    labels: labels,
                     datasets: [{
                         label: 'My First Dataset',
                         data: [65, 59, 80, 81, 56, 55, 40],

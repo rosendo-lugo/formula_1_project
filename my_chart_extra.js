@@ -27,6 +27,16 @@ document.querySelector('.dataSetSelector3').addEventListener('change', function(
     fetchCSVAndUpdateTable(this.value);
 });
 
+function updateChart(chart, newType, newDataSet, canvas) {
+    const newData = getData(newDataSet); // Assuming getData returns the new data
+    chart.destroy();
+    chart = new Chart(document.getElementById(canvas).getContext('2d'), {
+        type: newType,
+        data: newData,
+        options: { responsive: true }
+    });
+}
+
 function fetchCSVAndUpdateTable(fileName) {
     const filePath = `path/to/${fileName}.csv`;
     fetch(filePath)

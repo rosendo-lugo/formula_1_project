@@ -1,56 +1,51 @@
 /*
 import { getData } from './acquireData.js'; // Ensure the path is correct*/
 
-// Global declaration of the chart variable
-let newChart3;
-
-// Initialization of chart3
 const ctx3 = document.getElementById('chart3').getContext('2d');
-newChart3 = new Chart(ctx3, {
-    type: 'polarArea', // Default type, you can set this dynamically if needed
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        responsive: true,
-    }
-});
 
-// Function to update the chart type
-function updateChartType(chart, newType) {
-    chart.destroy(); // Destroy the current chart
-    return new Chart(chart.ctx, { // Return the new chart
-        type: newType,
-        data: chart.data,
-        options: chart.options
+function createChart(ctx, type, data, options) {
+    return new Chart(ctx, {
+        type: type,
+        data: data,
+        options: options
     });
 }
-// Event listener for chart3 type selector
-document.getElementById('chartTypeSelector3').addEventListener('change', function() {
-    newChart3 = updateChartType(newChart3, this.value);
-});
 
+// Chart data and options for Chart 3
+const chartData3 = {
+    labels: ['Black', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)'
+        ],
+        borderColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
+        ],
+        borderWidth: 1
+    }]
+};
+const chartOptions = { responsive: true };
+
+// Initialize Chart 3
+let newChart3 = createChart(ctx3, 'polarArea', chartData3, chartOptions);
+
+// Event listener for Chart 3 type selector
+document.getElementById('chartTypeSelector3').addEventListener('change', function() {
+    newChart3.destroy();
+    newChart3 = createChart(ctx3, this.value, chartData3, chartOptions);
+});
 
 
 /*

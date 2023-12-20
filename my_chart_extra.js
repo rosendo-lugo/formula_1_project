@@ -1,6 +1,8 @@
 /*
 import { getData } from './acquireData.js'; // Ensure the path is correct*/
 
+const ctx3 = document.getElementById('chart3').getContext('2d');
+
 function createChart(ctx, type, data, options) {
     return new Chart(ctx, {
         type: type,
@@ -8,7 +10,8 @@ function createChart(ctx, type, data, options) {
         options: options
     });
 }
-// Chart data and options
+
+// Chart data and options for Chart 3
 const chartData3 = {
     labels: ['Black', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
     datasets: [{
@@ -43,6 +46,7 @@ document.getElementById('chartTypeSelector3').addEventListener('change', functio
     newChart3.destroy();
     newChart3 = createChart(ctx3, this.value, chartData3, chartOptions);
 });
+
 
 /*
 const ctx3 = document.getElementById('chart3').getContext('2d');

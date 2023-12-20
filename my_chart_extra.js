@@ -64,14 +64,13 @@ function updateTableRows(rows) {
 }
 
 
-
 /* charts */
 const ctx3 = document.getElementById('chart3').getContext('2d');
 const ctx4 = document.getElementById('chart4').getContext('2d');
-const chart3 = new Chart(ctx3, {
+const newChart3 = new Chart(ctx3, {
     type: 'polarArea',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Black', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [{
             label: '# of Votes',
             data: [12, 19, 3, 5, 2, 3],
@@ -99,7 +98,7 @@ const chart3 = new Chart(ctx3, {
     }
 });
 
-const chart4 = new Chart(ctx4, {
+const newChart4 = new Chart(ctx4, {
   type: 'bar',
   data: {
       labels: ['Facebook', 'IG', 'Twitter', 'TikTok', 'Snapchat', 'LinkedIn'],

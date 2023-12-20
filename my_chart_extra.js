@@ -1,4 +1,5 @@
-import { getData } from './acquireData.js'; // Ensure the path is correct
+/*
+import { getData } from './acquireData.js'; // Ensure the path is correct*/
 
 /* 
 
@@ -130,7 +131,7 @@ const earningChart = new Chart(earningCtx, {
   }
 });
 
-
+/*
 function initializeChart(canvasId, dataSetSelectorClass) {
     const canvas = document.getElementById(canvasId);
     const chartTypeSelector = canvas.previousElementSibling.previousElementSibling;
@@ -194,4 +195,4 @@ function updateTableRows(rows) {
     tbody.innerHTML = rows.map(row => `<tr>${row.map(cell => `<td>${cell.trim()}</td>`).join('')}</tr>`).join('');
 }
 
-
+*/

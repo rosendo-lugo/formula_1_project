@@ -97,13 +97,6 @@ function getChartConfig(chartType) {
                             ],
                             borderWidth: 1
                         }]
-                    },
-                    options: {
-                        scales: {
-                            y: {
-                                beginAtZero: true
-                            }
-                        }
                     }
                 };
         case 'bubble':
@@ -143,7 +136,6 @@ function getChartConfig(chartType) {
                         tension: 0.1
                     }]
                 },
-                options: {}
             };
         case 'radar':
             return {

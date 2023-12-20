@@ -132,165 +132,101 @@
                 <div class="card">
                     <div>
                         <div class="numbers">1,504</div>
-                        <div class="cardName">Races</div>
+                        <div class="cardName">Daily Views</div>
                     </div>
                     <div class="iconBx">
-                        <ion-icon name="speedometer-outline"></ion-icon>
+                        <ion-icon name="eye-outline"></ion-icon>
                     </div>
                 </div>
                 <div class="card">
                     <div>
                         <div class="numbers">80</div>
-                        <div class="cardName">Cities</div>
+                        <div class="cardName">Sales</div>
                     </div>
                     <div class="iconBx">
-                        <ion-icon name="planet-outline"></ion-icon>
+                        <ion-icon name="cart-outline"></ion-icon>
                     </div>
                 </div>
                 <div class="card">
                     <div>
                         <div class="numbers">284</div>
-                        <div class="cardName">Circuits</div>
+                        <div class="cardName">Comments</div>
                     </div>
                     <div class="iconBx">
-                        <ion-icon name="aperture-outline"></ion-icon>
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
                     </div>
                 </div>
                 <div class="card">
                     <div>
-                        <div class="numbers">842</div>
-                        <div class="cardName">Drivers</div>
+                        <div class="numbers">$7,842</div>
+                        <div class="cardName">Earnings</div>
                     </div>
                     <div class="iconBx">
-                        <ion-icon name="people-outline"></ion-icon>
+                        <ion-icon name="cash-outline"></ion-icon>
                     </div>
                 </div>
             </div>
 
             <!-- Add Charts -->
             <div class="graphBox">
-                <!-- Chart box 1-->
-                <div class="boxTop">
-                    <div class="chartHeader">
-                        <h3>Chart Type</h3>
-                        <select class="chartTypeSelector">
-                            <option value="polarArea">Polar Area</option>
-                            <option value="bar">Bar</option>
-                            <option value="bubble">Bubble</option>
-                            <option value="doughnut">Doughnut</option>
-                            <option value="line">Line</option>
-                            <option value="radar">Radar</option>
-                            <option value="scatter">Scatter</option>
-                        </select>
-                    </div>
-                    <div class="dataSetHeader">
-                        <h3>Data Set 1</h3>
-                        <select class="dataSetSelector1">
-                            <option value="races">Races</option>
-                            <option value="circuits">Circuits</option>
-                            <option value="lapTimes">Lap Times</option>
-                            <option value="qualifying">Qualifying</option>
-                            <!-- Add other data sets as options -->
-                        </select>
-                    </div>
-                    <div class="dataSetHeader">
-                        <h3>Data Set 2</h3>
-                        <select class="dataSetSelector2">
-                            <option value="races">Races</option>
-                            <option value="circuits">Circuits</option>
-                            <option value="lapTimes">Lap Times</option>
-                            <option value="qualifying">Qualifying</option>
-                            <!-- Add other data sets as options -->
-                        </select>
-                    </div>
-                    <canvas id="myChart"></canvas>
-                </div>
-                <!-- Chart box 2-->
-                <div class="boxTop">
-                    <div class="chartHeader">
-                        <h3>Chart Type</h3>
-                        <select class="chartTypeSelector">
-                            <option value="polarArea">Polar Area</option>
-                            <option value="bar">Bar</option>
-                            <option value="bubble">Bubble</option>
-                            <option value="doughnut">Doughnut</option>
-                            <option value="line">Line</option>
-                            <option value="radar">Radar</option>
-                            <option value="scatter">Scatter</option>
-                        </select>
-                    </div>
-                    <div class="dataSetHeader">
-                        <h3>Data Set 1</h3>
-                        <select class="dataSetSelector1">
-                            <option value="races">Races</option>
-                            <option value="circuits">Circuits</option>
-                            <option value="lapTimes">Lap Times</option>
-                            <option value="qualifying">Qualifying</option>
-                            <!-- Add other data sets as options -->
-                        </select>
-                    </div>
-                    <div class="dataSetHeader">
-                        <h3>Data Set 2</h3>
-                        <select class="dataSetSelector2">
-                            <option value="races">Races</option>
-                            <option value="circuits">Circuits</option>
-                            <option value="lapTimes">Lap Times</option>
-                            <option value="qualifying">Qualifying</option>
-                            <!-- Add other data sets as options -->
-                        </select>
-                    </div>
-                    <canvas id="earning"></canvas>
-                </div>
-                <!-- Chart box 3-->
-                <div class="boxBottom">
-                    <div class="chartHeader">
-                        <h3>Chart Type</h3>
-                        <select class="chartTypeSelector">
-                            <option value="polarArea">Polar Area</option>
-                            <option value="bar">Bar</option>
-                            <option value="bubble">Bubble</option>
-                            <option value="doughnut">Doughnut</option>
-                            <option value="line">Line</option>
-                            <option value="radar">Radar</option>
-                            <option value="scatter">Scatter</option>
-                        </select>
-                    </div>
-                    <canvas id="chart3"></canvas>
-                </div>
-                <!-- Chart box 4-->
-                <div class="boxBottom">
-                    <div class="chartHeader">
-                        <h3>Chart Type</h3>
-                        <select class="chartTypeSelector">
-                            <option value="polarArea">Polar Area</option>
-                            <option value="bar">Bar</option>
-                            <option value="bubble">Bubble</option>
-                            <option value="doughnut">Doughnut</option>
-                            <option value="line">Line</option>
-                            <option value="radar">Radar</option>
-                            <option value="scatter">Scatter</option>
-                        </select>
-                    </div>
-                    <canvas id="chart4"></canvas>
-                </div>
+                <div class="box"><canvas id="myChart"></canvas></div>
+                <div class="box"><canvas id="earning"></canvas></div>
             </div>
 
-            <!-- Formula One Data list -->
+            <!-- order details list -->
             <div class="details">
-                <div class="formulaOne">
+                <div class="recentOrders">
                     <div class="cardHeader">
-                        <h2>Formula 1 Data</h2>
-                        <select class="dataSetSelector3">
-                            <option value="races">Races</option>
-                            <option value="circuits">Circuits</option>
-                            <option value="lapTimes">Lap Times</option>
-                            <option value="qualifying">Qualifying</option>
-                            <!-- Add other data sets as options -->
-                        </select>
+                        <h2>Recent Orders</h2>
+                        <a href="#" class="btn">View All</a>
                     </div>
-                    <table id="fullDataTable">
-                        <thead></thead>
-                        <tbody></tbody>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Payment</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered"> Delivered</span></td>
+                            </tr> 
+                            <tr>
+                                <td>Window Coolers</td>
+                                <td>$100</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>Speaker</td>
+                                <td>$620</td>
+                                <td>Paid</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr>
+                            <tr>
+                                <td>Hp Laptop</td>
+                                <td>$110</td>
+                                <td>Due</td>
+                                <td><span class="status inprogress">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>Apple Watch</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>Window Coolers</td>
+                                <td>$100</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
 
@@ -333,6 +269,7 @@
                             <td><h4>Kimi<br><span>Finnish</span></h4></td>
                         </tr>
                     </table>
+                    
                 </div>
             </div>
         </div>
@@ -341,7 +278,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-    <script src="my_chart_extra.js"></script>
+    <script src="my_chart.js"></script>
     <script>
         //MenuToggle
         let toggle = document.querySelector('.toggle');

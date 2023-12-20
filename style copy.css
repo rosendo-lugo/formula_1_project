@@ -291,11 +291,11 @@ body
     width: 100%;
     padding: 20px;
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 1fr 2fr;
     grid-gap: 30px;
     min-height: 200px;
 }
-.graphBox .boxTop
+.graphBox .box
 {
     position: relative;
     background: #fff;
@@ -304,73 +304,17 @@ body
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
 }
-/* Styling for headers above the dropdowns */
-.graphBox .boxTop .chartHeader,
-.graphBox .boxTop .dataSetHeader 
+.details
 {
-    margin-bottom: 10px;
-}
-
-.graphBox .boxTop .chartHeader h3,
-.graphBox .boxTop .dataSetHeader h3 
-{
-    color: var(--blue);
-    font-size: 1.1rem;
-}
-
-/* Apply the same styles to all select elements */
-.graphBox .boxTop select 
-{
-    padding: 5px 10px;
-    border: 1px solid var(--blue);
-    background-color: var(--white);
-    color: var(--blue);
-    border-radius: 6px;
-    outline: none; /* Removes the default focus outline */
-    cursor: pointer;/* Spacing between dropdown and next element */
-}
-/* Bottom Charts */
-.graphBox .boxBottom
-{
-    position: relative;
-    background: #fff;
-    padding: 20px;
-    width: 100%;
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-    border-radius: 20px;
-}
-/* Styling for headers above the dropdowns */
-.graphBox .boxBottom .chartHeader
-{
-    margin-bottom: 10px;
-}
-
-.graphBox .boxBottom .chartHeader h3
-{
-    color: var(--blue);
-    font-size: 1.1rem;
-}
-.graphBox .boxBottom select 
-{
-    padding: 5px 10px;
-    border: 1px solid var(--blue);
-    background-color: var(--white);
-    color: var(--blue);
-    border-radius: 6px;
-    outline: none; /* Removes the default focus outline */
-    cursor: pointer;/* Spacing between dropdown and next element */
-}
-.details {
     position: relative;
     width: 100%;
     padding: 20px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
+    /* margin-top: 10px; */
 }
-
-/* Styling for the formulaOne container */
-.details .formulaOne 
+.details .recentOrders
 {
     position: relative;
     display: grid;
@@ -380,65 +324,102 @@ body
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
 }
-
-/* Styling for the card header with a flex layout */
-.cardHeader 
+.cardHeader
 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 20px; /* Spacing between header and table */
 }
-.cardHeader h2 
+.cardHeader h2
 {
     font-weight: 600;
-    color: var(--blue); /* Dark gray color for the header text */
-}
-/* Styling for the dropdown select in the card header */
-.cardHeader select 
-{
-    padding: 5px 10px;
-    border: 1px solid var(--blue);
-    background-color: var(--white);
     color: var(--blue);
-    border-radius: 6px;
-    outline: none; /* Removes the default focus outline */
-    cursor: pointer; /* Changes cursor to pointer on hover */
 }
-
-/* Styling for the table in the formulaOne container */
-.details table 
+.btn
+{
+    position: relative;
+    padding: 5px 10px;
+    background: var(--blue);
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 6px;
+}
+.details table
 {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
 }
-/* Styling for the table header row */
 .details table thead td
 {
     font-weight: 600;
 }
-
-/* Styling for the table headers (th elements) */
-.details .formulaOne thead th 
+.details .recentOrders table tr
 {
-    font-weight: 600;
-    padding: 10px;
-    text-align: left;
+    color: var(--black1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-/* Styling for the table data cells (td elements) */
-.details .formulaOne tbody td 
+.details .recentOrders table tr:last-child
 {
-    padding: 10px;
-    text-align: left;
-    color: var(--blue); /* Dark gray color for table data */
+    border-bottom: none;
 }
-/* Hover effect for table rows */
-.details .formulaOne table tbody tr:hover 
+.details .recentOrders table tbody tr:hover
 {
     background: var(--blue);
     color: var(--white);
 }
+.details .recentOrders table tr td
+{
+    padding: 10px;
+}
+.details .recentOrders table tr td:last-child
+{
+    text-align: end;
+}
+.details .recentOrders table tr td:nth-child(2)
+{
+    text-align: end;
+}
+.details .recentOrders table tr td:nth-child(3)
+{
+    text-align: center;
+}
+.status.delivered 
+{
+    padding: 2px 4px;
+    background: #8de02c;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.status.pending
+{
+    padding: 2px 4px;
+    background: #f9ca3f;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.status.return
+{
+    padding: 2px 4px;
+    background: #f00;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.status.inprogress
+{
+    padding: 2px 4px;
+    background: #1795ce;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+} 
 .topDrivers
 {
     position: relative;
@@ -533,7 +514,7 @@ body
     {
         grid-template-columns: repeat(1,1fr);
     }
-    .formulaOne
+    .recentOrders
     {
         overflow-x: auto;
     }

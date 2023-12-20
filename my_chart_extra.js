@@ -69,7 +69,7 @@ function getChartConfig(chartType) {
                 options: {
                     responsive: true,
                 }
-            };
+            }; /*
             case 'bar':
                 return {
                     data: {
@@ -198,7 +198,7 @@ function getChartConfig(chartType) {
                 }
             };
         default:
-            return { data: null, options: {} };
+            return { data: null, options: {} };*/
     }
 }
 
